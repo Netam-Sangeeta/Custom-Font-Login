@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive Login Page</title>
+
+	<!-- Link for CSS -->
+	<link rel="stylesheet" type="text/css" href="styles.css" media="all">
+</head>
+
+<body>
+    <!-- Responsive Login Form -->
+	<form class="login-container" id="loginForm">
+		<h1 class="login-title">User Login</h1>
+		<input type="text" id="username" class="input-field" placeholder="Enter Username" required>		
+		<input type="password" id="password" class="input-field" placeholder="Enter Password" required>
+		<input type="submit" class="submit-btn" value="Sign In">
+	</form>
+
+	<!-- JavaScript -->
+	<script>
+		document.getElementById('loginForm').addEventListener('submit', function(event) {
+			event.preventDefault(); 
+			const username = document.getElementById('username').value;
+			const password = document.getElementById('password').value;
+
+			
+			if (username && password) {				
+				window.location.href = 'nextpage.html'; 
+			} else {
+				alert('Please fill in all fields.');
+			}
+		});
+	</script>
+</body>
+</html>

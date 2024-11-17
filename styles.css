@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Mail';
+    src: url('fonts/Mail.ttf') format('truetype');
+}
+
+/* General Reset */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Mail', cursive;
+	background-color: #e0f7fa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+/* Container for the Login Form */
+.login-container {
+	width: 90%;
+	max-width: 400px;
+	padding: 40px 30px;
+	background: #00695c;
+	text-align: center;
+	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+	border-radius: 15px;
+}
+
+/* Login Title */
+.login-title {
+	font-family: 'Mail', cursive;
+	color: #ffd54f;
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+/* Input Fields */
+.input-field {
+	border: 0;
+	background: none;
+	display: block;
+	margin: 15px auto;
+	border: 2px solid #ffffff;
+	text-align: center;
+	padding: 12px;
+	width: 90%; 
+	max-width: 300px;
+	outline: none;
+	color: #ffffff;
+	border-radius: 20px;
+	transition: 0.3s;
+	font-size: 1rem;
+}
+
+.input-field:focus {
+	border-color: #ffab40;
+}
+
+/* Submit Button */
+.submit-btn {
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	border: 2px solid #ffab40; 
+	text-align: center;
+	padding: 12px;
+	width: 90%; 
+	max-width: 200px;
+	outline: none;
+	color: #ffffff;
+	border-radius: 20px;
+	transition: 0.3s;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.submit-btn:hover {
+	background: #ffab40;
+	color: #00695c; 
+}
